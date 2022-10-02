@@ -19,6 +19,4 @@ class MarvelService {
         return this.getResource(`${this._apiBase}characters/${id}?${this._apiKey}`);
     }
 }
-
-
 export default MarvelService;
