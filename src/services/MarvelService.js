@@ -22,7 +22,14 @@ class MarvelService {
     }
 
     _transformCharacter = (char) => {
+        if (char.description === ''){
+            char.description = "Описание данного персонажа отсутствует."
+        }
 
+        if(char.description.length > 80){
+            char.description = char.description.slice(0, 80) + "..."
+        }
+        
         return {
             name: char.name,
             description: char.description,
