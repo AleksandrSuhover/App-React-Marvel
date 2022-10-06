@@ -23,7 +23,7 @@ class MarvelService {
 
     _transformCharacter = (char) => {
         if (char.description === ''){
-            char.description = "Описание данного персонажа отсутствует."
+            char.description = "Description not found"
         }
 
         if(char.description.length > 80){
