@@ -25,7 +25,6 @@ class MarvelService {
         if (char.description === ''){
             char.description = "Description not found"
         }
-
         if(char.description.length > 80){
             char.description = char.description.slice(0, 80) + "..."
         }
