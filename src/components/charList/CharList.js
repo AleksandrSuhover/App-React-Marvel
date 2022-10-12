@@ -8,7 +8,8 @@ import MarvelService from '../../services/MarvelService';
 class CharList extends Component {
 
     state = {
-        chars: []
+        chars: [],
+        id: 0
     }
 
 
@@ -30,9 +31,8 @@ class CharList extends Component {
         }
 
     marvelService = new MarvelService();
-
     render () {
-        const {chars} = this.state;
+        const {chars, id} = this.state;
         console.log(chars[1]);
 
         return (
