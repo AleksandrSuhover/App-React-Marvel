@@ -63,7 +63,6 @@ class CharInfo extends Component {
     }
 
     render () {
-
         const {char, loading, error} = this.state;
 
         const skeleton = char || loading || error ? null : <Skeleton/>
@@ -127,8 +126,8 @@ const View = ({char}) => {
     )
 }
 
-CharInfo.propTypes = {
-    charId: PropTypes.number
+CharInfo.propTypes = {              
+    charId: PropTypes.number        // Делаем проверку через propTypes чтобы id приходило только типом number
 }
 
 export default CharInfo;
